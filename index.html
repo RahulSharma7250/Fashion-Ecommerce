@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fashion Store</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#products">Products</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h3>Women</h3>
+                                <ul>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">Tops</a></li>
+                                    <li><a href="#">Bottoms</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h3>Men</h3>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Pants</a></li>
+                                    <li><a href="#">Suits</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h3>Kids</h3>
+                                <ul>
+                                    <li><a href="#">Girls</a></li>
+                                    <li><a href="#">Boys</a></li>
+                                    <li><a href="#">Babies</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Summer Collection 2024</h1>
+                <p>Discover the latest trends in fashion</p>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="product-grid" id="products">
+            <!-- Product cards will be dynamically added here -->
+        </section>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on new products and upcoming sales</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total-amount">0.00</span></p>
+            </div>
+            <button id="checkout-btn" class="cta-button">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Form -->
+    <div class="checkout-modal">
+        <div class="checkout-content">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="address" placeholder="Address" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="zip" placeholder="ZIP Code" required>
+                <input type="text" name="card" placeholder="Card Number" required>
+                <input type="text" name="expiry" placeholder="MM/YY" required>
+                <input type="text" name="cvv" placeholder="CVV" required>
+                <button type="submit" class="cta-button">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
